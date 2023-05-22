@@ -1,13 +1,6 @@
 # Desafio Itaú
 Criação de uma API Java com Spring para cadastro de usuário com validações.
 
-- [Pré-requisitos](#pré-requisitos)
-- [Instruções](#instruções)
-- [Integração](#integração)
-- [Endpoints](#endpoints)
-- [Utilizando a Arquitetura Hexagonal](#hexagonal)
-
-
 ## Pré-requisitos
 - Java 1.8.0_162
 - Maven 3.3.9
@@ -28,7 +21,7 @@ Com o build realizado com sucesso, a aplicação pode ser executada através da 
 
 ``` docker run -it -p 8080:8080 jeffersonaraujo/ubuntu-java8:latest ```
 
-A partir de agora você poderá acessar os serviços pelos [endpoints](#endpoints).
+A partir de agora você poderá acessar os serviços pelos endpoints.
 
 ## Endpoints
 Existe uma documentação dos serviços montada usando swagger que pode ser acessada pelo link, após executar os passos acima, segue abaixo:
@@ -103,7 +96,6 @@ Endpoints necessário para consumir os serviços da aplicação:
        
        ```
        
-
-## Utilizando a Arquitetura Hexagonal
+## Utilizando a Arquitetura Hexagonal 
 O projeto está na pasta 'DesafioItauHexa', será possível observar que este projeto foi desenvolvido orientado ao TDD e com foco no requisito de negócio assim sendo um sistema totalmente fechado(caixa preta).  
 Este é um sistema que não se importa com qual decisão técnica, infra estrutura ou armazenamento de dados será utilizada ele vai se comportar como um módulo que pode se encaixado e funcionar sem precisar de alterar o seu conteúdo.
