@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "75c797c3-6a6b-47e7-9136-fa379fbb2fb6",
+		"name": "Desafio_Itau",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2441069"
+	},
+	"item": [
+		{
+			"name": "Cadastro Usuário",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"dtNascimento\": \"2005-05-21\",\r\n  \"email\": \"araujo.jeffersonp@gmail.com\",\r\n  \"endereco\": {\r\n    \"bairro\": \"Jacarépagua\",\r\n    \"cep\": \"12345-090\",\r\n    \"complemento\": \"lt 00 Qd A\",\r\n    \"estado\": \"Rio de Janeiro\",\r\n    \"logradouro\": \"Rua José\",\r\n    \"numero\": 0,\r\n    \"pais\": \"Brasil\"\r\n  },\r\n  \"habilidades\": [\r\n    {\r\n      \"tipo\": \"Abacaxi\"\r\n    }\r\n  ],\r\n  \"nome\": \"Jefferson Araujo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/usuario/cadastra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"cadastra"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Buscar Cadastro",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/usuario/busca/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"busca",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

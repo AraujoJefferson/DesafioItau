@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="desafioitau">
+    <output-path>$PROJECT_DIR$/classes/artifacts/desafioitau</output-path>
+    <root id="archive" name="desafioitau.jar">
+      <element id="module-output" name="itau" />
+      <element id="module-source" name="itau" />
+    </root>
+  </artifact>
+</component>
